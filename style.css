@@ -1,0 +1,2836 @@
+body{
+    font-family: 'Poppins', Courier, monospace;
+    background-color: #080808;
+    margin: 0;
+    color: white;
+    padding: 0;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    width: 14px;
+}
+body::-webkit-scrollbar-track{
+    border-radius: 40px;
+    background-color: gray;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #ff004f;
+    border-radius: 40px;
+}
+header{
+    display: flex;
+    color: white;
+}
+header h1{
+    margin-top: 8px;
+    margin-left: 60px;
+}
+header span{
+    color: #ff004f;
+}
+header nav{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+header nav li{
+    list-style: none;
+    margin-left: 60px;
+}
+header nav li a{
+    text-decoration: wavy;
+    color: white;
+    position: relative;
+}
+header nav li a::after{
+    content: "";
+    position: absolute;
+    background-color: #ff004f;
+    color: #ff004f;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: ease .4s;
+}
+header nav li a:hover::after{
+    width: 100%;
+}
+header nav li a:hover{
+    color: #ff004f;
+}
+.first-section{
+    display: flex;
+    transition-delay: 1s;
+}
+.first-section .text{
+    width: 500px;
+    margin-left: 60px;
+    margin-top: 180px;
+}
+.first-section .text h2{
+    font-size: 36px;
+}
+.first-section .text #element{
+    color: #ff004f;
+}
+.first-section .img{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.second-section{
+    margin-top: 230px;
+    display: flex;
+    transition-delay: 1s;
+    margin-left: 60px;
+}
+.second-section .img{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+}
+.second-section .img img{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+.second-section .text{
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: -5px;
+}
+.second-section .text h1{
+    font-size: 42px;
+}
+.second-section .text p{
+    color: gray;
+    margin-top: 0px;
+}
+.second-section .text .tab-container button{
+    margin-top: 20px;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    position: relative;
+}
+.second-section .text .tab-container button:hover{
+    color: #ff004f;
+}
+.second-section .text .tab-container #btn1{
+    margin-left: -5px;
+}
+.second-section .text .tab-container #btn2{
+    margin-left: 40px;
+}
+.second-section .text .tab-container #btn3{
+    margin-left: 40px;
+}
+.second-section .text .tab-container .tab{
+    margin-top: 40px;
+    display: none;
+}
+.third-section{
+    margin-top: 150px;
+}
+.third-section .main-container{
+    display: flex;
+    margin-top: 30px;
+}
+.third-section h1{
+    font-size: 42px;
+    margin-left: 60px;
+}
+.third-section .container{
+    height: 275px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 275px;
+    background-color: rgb(35, 35, 35);
+    margin-left: 60px;
+}
+.third-section .container:hover{
+    height: 278px;
+    width: 278px;
+    transition: 1s;
+}
+.third-section .container h2{
+    font-size: 28px;
+}
+.third-section .container p{
+    font-size: 14px;
+}
+.third-section .container #hoverP:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.third-section #cont2{
+    margin-left: 95px;
+}
+.third-section #cont3{
+    margin-left: 95px;
+}
+.forth-section{
+    margin-top: 150px;
+    margin-left: 60px;
+}
+.forth-section h1{
+    font-size: 42px;
+}
+.fifth-section{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.fifth-section img{
+    border-radius: 5px;
+    position: relative;
+}
+.sixth-section{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+}
+.sixth-section .container1{
+    position: absolute;
+    text-align: center;
+    margin-top: -350px;
+    width: 300px;
+    background-color: #ff0051a5;
+    height: 350px;
+    margin-left: -843px;
+    display: none;
+}
+.sixth-section .container1 h3{
+    margin-top: 100px;
+}
+.sixth-section .container1 button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+    color: #ff004f;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.sixth-section .container2{
+    display: none;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: -350px;
+    width: 300px;
+    background-color: #ff0051a5;
+    height: 350px;
+    position: absolute;
+}
+.sixth-section .container2 h3{
+    margin-top: 100px;
+}
+.sixth-section .container2 button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+    color: #ff004f;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.sixth-section .container3{
+    margin-top: -350px;
+    width: 300px;
+    background-color: #ff0051a5;
+    height: 350px;
+    text-align: center;
+    display: none;
+    margin-left: 844px;
+    position: absolute;
+}
+.sixth-section .container3 h3{
+    margin-top: 100px;
+}
+.sixth-section .container3 button{
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+    color: #ff004f;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.seventh-section{
+    display: flex;
+    margin-left: 60px;
+}
+.seventh-section .text{
+    margin-top: 10px;
+}
+.seventh-section h1{
+    font-size: 42px;
+}
+.seventh-section .text .email{
+    display: flex;
+    margin-top: 40px;
+}
+.seventh-section .text .email i{
+    font-size: 18px;
+    color: #ff004f;
+}
+.seventh-section .text .email p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: -4px;
+}
+.seventh-section .text .phone{
+    display: flex;
+    margin-top: 5px;
+}
+.seventh-section .text .phone i{
+    font-size: 18px;
+    color: #ff004f;
+}
+.seventh-section .text .phone p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: -4px;
+}
+.seventh-section .text .logos{
+    margin-left: -10px;
+    margin-top: 10px;
+}
+.seventh-section .text .logos i{
+    font-size: 24px;
+    color: gray;
+    cursor: pointer;
+    margin: 0 12px;
+}
+.seventh-section .text .logos i:hover{
+    color: #ff004f;
+}
+.seventh-section .text button{
+    background-color: #ff004f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.seventh-section .text button:hover{
+    background-color: #9c0434b2;
+    color: gray;
+}
+.seventh-section .text button span{
+    margin-left: 8px;
+}
+.seventh-section form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+}
+.seventh-section form input{
+    width: 580px;
+    background-color: rgb(35, 35, 35);
+    color: #ccc;
+    outline: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 0;
+}
+.seventh-section form textarea{
+    width: 580px;
+    background-color: rgb(35, 35, 35);
+    margin-top: 20px;
+    color: #ccc;
+    outline: 0;
+    padding: 10px;
+    border: 0;
+    height: 100px;
+}
+.seventh-section form button{
+    background-color: #ff004f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    width: 580px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.seventh-section form button:hover{
+    background-color: #9c0434b2;
+    color: gray;
+}
+footer{
+    margin-top: 70px;
+    background-color: rgb(35, 35, 35);
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 375px){
+    header{
+        display: flex;
+        color: white;
+    }
+    header h1{
+        margin-top: 16px;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    header span{
+        color: #ff004f;
+    }
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    .first-section{
+        display: flex;
+    }
+    .first-section .text{
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 150px;
+    }
+    .first-section .text h2{
+        font-size: 22px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 14px;
+        margin-top: 80px;
+    }
+    .first-section .img img{
+        height: 300px;
+        width: 250px;
+    }
+    .second-section{
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        transition-delay: 1s;
+        margin-left: 35px;
+    }
+    .second-section .img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+    }
+    .second-section .img img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .second-section .text h1{
+        font-size: 42px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 150px;
+    }
+    .third-section .main-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .third-section .container{
+        height: 275px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 275px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 50px;
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 22px;
+    }
+    .third-section .container p{
+        font-size: 16;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 47px;
+        margin-top: 30px;
+    }
+    .third-section #cont3{
+        margin-left: 47px;
+        margin-top: 30px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .fifth-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        margin-left: 35px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -1090px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -3px;
+        display: none;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: -2px;
+        border-radius: 5px;
+        margin-top: -720px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        text-align: center;
+        display: none;
+        margin-left: -3px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: -25px;
+        margin-top: 50px;
+    }
+    .seventh-section form input{
+        width: 300px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 300px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 300px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 70px;
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 480px){
+    header{
+        display: flex;
+        color: white;
+    }
+    header h1{
+        margin-top: 16px;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    header span{
+        color: #ff004f;
+    }
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    .first-section{
+        display: flex;
+    }
+    .first-section .text{
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 150px;
+    }
+    .first-section .text h2{
+        font-size: 26px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 17px;
+        margin-top: 80px;
+    }
+    .first-section .img img{
+        height: 300px;
+        width: 280px;
+    }
+    .second-section{
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        transition-delay: 1s;
+        margin-left: 10px;
+    }
+    .second-section .img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 70px;
+    }
+    .second-section .img img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .second-section .text h1{
+        font-size: 42px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 100px;
+    }
+    .third-section .main-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .third-section .container{
+        height: 275px;
+        padding: 20px;
+        border-radius: 5px;
+        width: 275px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 100px;
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 22px;
+    }
+    .third-section .container p{
+        font-size: 16;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 98px;
+        margin-top: 30px;
+    }
+    .third-section #cont3{
+        margin-left: 98px;
+        margin-top: 30px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+        text-align: center;
+    }
+    .fifth-section{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        margin-left: 85px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -1090px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -8px;
+        display: none;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: -8px;
+        border-radius: 5px;
+        margin-top: -720px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        text-align: center;
+        display: none;
+        margin-left: -8px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: -5px;
+        margin-top: 50px;
+    }
+    .seventh-section form input{
+        width: 370px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 370px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 370px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 70px;
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 680px){
+    header{
+        display: flex;
+        color: white;
+    }
+    header h1{
+        margin-top: 16px;
+        font-size: 26px;
+        margin-left: 30px;
+    }
+    header span{
+        color: #ff004f;
+    }
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 130px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    .first-section{
+        display: flex;
+    }
+    .first-section .text{
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 150px;
+    }
+    .first-section .text h2{
+        font-size: 26px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 27px;
+        margin-top: 80px;
+    }
+    .first-section .img img{
+        height: 350px;
+    }
+    .second-section{
+        margin-top: 130px;
+        display: flex;
+        transition-delay: 1s;
+        margin-left: 10px;
+    }
+    .second-section .img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 10px;
+    }
+    .second-section .img img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 10px;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    .second-section .text h1{
+        font-size: 36px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 100px;
+    }
+    .third-section .main-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        margin-left: 20px;
+    }
+    .third-section .container{
+        height: 310px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 275px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 10px;
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 22px;
+    }
+    .third-section .container p{
+        font-size: 16;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .third-section #cont3{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+        margin-left: 10px;
+    }
+    .fifth-section{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -720px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -329px;
+        display: none;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: 349px;
+        border-radius: 5px;
+        margin-top: -720px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        text-align: center;
+        border-radius: 5px;
+        display: none;
+        margin-left: 10px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        
+        margin-left: 10px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    .seventh-section form input{
+        width: 370px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 370px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 370px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 70px;
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width: 767px){
+    header{
+        display: flex;
+        color: white;
+    }
+    header h1{
+        margin-top: 16px;
+        font-size: 26px;
+        margin-left: 30px;
+    }
+    header span{
+        color: #ff004f;
+    }
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 160px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    .first-section{
+        display: flex;
+    }
+    .first-section .text{
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 150px;
+    }
+    .first-section .text h2{
+        font-size: 32px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 45px;
+        margin-top: 80px;
+    }
+    .first-section .img img{
+        height: 350px;
+    }
+    .second-section{
+        margin-top: 130px;
+        display: flex;
+        transition-delay: 1s;
+        margin-left: 10px;
+    }
+    .second-section .img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 10px;
+    }
+    .second-section .img img{
+        height: 300px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 30px;
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+    .second-section .text h1{
+        font-size: 36px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 100px;
+    }
+    .third-section .main-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        margin-left: 20px;
+    }
+    .third-section .container{
+        height: 275px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 275px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 10px;
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 22px;
+    }
+    .third-section .container p{
+        font-size: 16;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .third-section #cont3{
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+        margin-left: 10px;
+    }
+    .fifth-section{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 20px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -720px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -329px;
+        display: none;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: 349px;
+        border-radius: 5px;
+        margin-top: -720px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        text-align: center;
+        border-radius: 5px;
+        display: none;
+        margin-left: 10px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        margin-left: 30px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+    .seventh-section form input{
+        width: 370px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 370px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 370px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 70px;
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    header{
+        display: flex;
+        color: white;
+    }
+    header h1{
+        margin-top: 8px;
+        margin-left: 60px;
+    }
+    header span{
+        color: #ff004f;
+    }
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 60px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    header nav li a::after{
+        content: "";
+        position: absolute;
+        background-color: #ff004f;
+        color: #ff004f;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: ease .4s;
+    }
+    header nav li a:hover::after{
+        width: 100%;
+    }
+    header nav li a:hover{
+        color: #ff004f;
+    }
+    .first-section{
+        display: flex;
+        transition-delay: 1s;
+    }
+    .first-section .text{
+        width: 500px;
+        margin-left: 60px;
+        margin-top: 180px;
+    }
+    .first-section .text h2{
+        font-size: 36px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 140px;
+        margin-top: 50px;
+    }
+    .second-section{
+        margin-top: 230px;
+        display: flex;
+        transition-delay: 1s;
+        margin-left: 60px;
+    }
+    .second-section .img{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+    }
+    .second-section .img img{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-top: -5px;
+    }
+    .second-section .text h1{
+        font-size: 42px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 150px;
+    }
+    .third-section .main-container{
+        display: flex;
+        margin-top: 30px;
+        margin-left: -20px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        margin-left: 60px;
+    }
+    .third-section .container{
+        height: 275px;
+        padding: 20px;
+        border-radius: 5px;
+        width: 275px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 60px;
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 28px;
+    }
+    .third-section .container p{
+        font-size: 14px;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 95px;
+    }
+    .third-section #cont3{
+        margin-left: 95px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 60px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+    }
+    .fifth-section{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -681px;
+        display: none;
+        border-radius: 5px;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        text-align: center;
+        display: none;
+        border-radius: 5px;
+        margin-left: 682px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        margin-left: 60px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .seventh-section form input{
+        width: 580px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 580px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 580px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 70px;
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 8px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    header{
+        display: flex;
+        color: white;
+    }
+    header h1{
+        margin-top: 8px;
+        margin-left: 60px;
+    }
+    header span{
+        color: #ff004f;
+    }
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 400px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 60px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    header nav li a::after{
+        content: "";
+        position: absolute;
+        background-color: #ff004f;
+        color: #ff004f;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: ease .4s;
+    }
+    header nav li a:hover::after{
+        width: 100%;
+    }
+    header nav li a:hover{
+        color: #ff004f;
+    }
+    .first-section{
+        display: flex;
+        transition-delay: 1s;
+    }
+    .first-section .text{
+        width: 500px;
+        margin-left: 60px;
+        margin-top: 180px;
+    }
+    .first-section .text h2{
+        font-size: 36px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+    .second-section{
+        margin-top: 230px;
+        display: flex;
+        transition-delay: 1s;
+        margin-left: 60px;
+    }
+    .second-section .img{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+    }
+    .second-section .img img{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-top: -5px;
+    }
+    .second-section .text h1{
+        font-size: 42px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 150px;
+    }
+    .third-section .main-container{
+        display: flex;
+        margin-top: 30px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        margin-left: 60px;
+    }
+    .third-section .container{
+        height: 275px;
+        padding: 20px;
+        border-radius: 5px;
+        width: 275px;
+        background-color: rgb(35, 35, 35);
+        margin-left: 60px;
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 28px;
+    }
+    .third-section .container p{
+        font-size: 14px;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 95px;
+    }
+    .third-section #cont3{
+        margin-left: 95px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 60px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+    }
+    .fifth-section{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -844px;
+        border-radius: 5px;
+        display: none;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        border-radius: 5px;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        border-radius: 5px;
+        height: 350px;
+        text-align: center;
+        display: none;
+        margin-left: 844px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        margin-left: 60px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 18px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 180px;
+    }
+    .seventh-section form input{
+        width: 580px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 580px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 580px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 70px;
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1536px){
+    header nav{
+        display: flex;
+        margin-top: 20px;
+        margin-left: 500px;
+    }
+    header nav li{
+        list-style: none;
+        margin-left: 80px;
+    }
+    header nav li a{
+        text-decoration: wavy;
+        color: white;
+        position: relative;
+    }
+    header nav li a::after{
+        content: "";
+        position: absolute;
+        background-color: #ff004f;
+        color: #ff004f;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: ease .4s;
+    }
+    header nav li a:hover::after{
+        width: 100%;
+    }
+    header nav li a:hover{
+        color: #ff004f;
+    }
+    .first-section{
+        display: flex;
+        transition-delay: 1s;
+    }
+    .first-section .text{
+        width: 500px;
+        margin-left: 60px;
+        margin-top: 180px;
+    }
+    .first-section .text h2{
+        font-size: 46px;
+    }
+    .first-section .text #element{
+        color: #ff004f;
+    }
+    .first-section .img{
+        margin-left: 350px;
+        margin-top: 50px;
+    }
+    .first-section .img img{
+        height: 550px;
+    }
+    .second-section{
+        margin-top: 230px;
+        display: flex;
+        transition-delay: 1s;
+        margin-left: 60px;
+    }
+    .second-section .img{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+        background-color: rgb(35, 35, 35);
+    }
+    .second-section .img img{
+        height: 400px;
+        width: 400px;
+        border-radius: 5px;
+    }
+    .second-section .text{
+        margin-right: 60px;
+        margin-left: 60px;
+        margin-top: -5px;
+    }
+    .second-section .text h1{
+        font-size: 42px;
+    }
+    .second-section .text p{
+        color: gray;
+        margin-top: 0px;
+    }
+    .second-section .text .tab-container button{
+        margin-top: 20px;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+        border: none;
+        font-size: 18px;
+        position: relative;
+    }
+    .second-section .text .tab-container button:hover{
+        color: #ff004f;
+    }
+    .second-section .text .tab-container #btn1{
+        margin-left: -5px;
+    }
+    .second-section .text .tab-container #btn2{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container #btn3{
+        margin-left: 40px;
+    }
+    .second-section .text .tab-container .tab{
+        margin-top: 40px;
+        display: none;
+    }
+    .third-section{
+        margin-top: 150px;
+    }
+    .third-section .main-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    .third-section h1{
+        font-size: 42px;
+        margin-left: 60px;
+    }
+    .third-section .container{
+        height: 300px;
+        padding: 20px;
+        border-radius: 5px;
+        width: 300px;
+        background-color: rgb(35, 35, 35);
+        
+    }
+    .third-section .container:hover{
+        height: 278px;
+        width: 278px;
+        transition: 1s;
+    }
+    .third-section .container h2{
+        font-size: 28px;
+    }
+    .third-section .container p{
+        font-size: 14px;
+    }
+    .third-section .container #hoverP:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .third-section #cont2{
+        margin-left: 95px;
+    }
+    .third-section #cont3{
+        margin-left: 95px;
+    }
+    .forth-section{
+        margin-top: 150px;
+        margin-left: 60px;
+    }
+    .forth-section h1{
+        font-size: 42px;
+        margin-left: 50px;
+    }
+    .fifth-section{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+    .fifth-section img{
+        border-radius: 5px;
+        position: relative;
+    }
+    .sixth-section{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    .sixth-section .container1{
+        position: absolute;
+        text-align: center;
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        margin-left: -1022px;
+        display: none;
+        border-radius: 5px;
+    }
+    .sixth-section .container1 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container1 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container2{
+        display: none;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        position: absolute;
+    }
+    .sixth-section .container2 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container2 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .sixth-section .container3{
+        margin-top: -350px;
+        width: 300px;
+        background-color: #ff0051a5;
+        height: 350px;
+        text-align: center;
+        display: none;
+        margin-left: 1023px;
+        border-radius: 5px;
+        position: absolute;
+    }
+    .sixth-section .container3 h3{
+        margin-top: 100px;
+    }
+    .sixth-section .container3 button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 40px;
+        color: #ff004f;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .seventh-section{
+        display: flex;
+        margin-left: 100px;
+    }
+    .seventh-section .text{
+        margin-top: 10px;
+    }
+    .seventh-section h1{
+        font-size: 42px;
+    }
+    .seventh-section .text .email{
+        display: flex;
+        margin-top: 40px;
+    }
+    .seventh-section .text .email i{
+        font-size: 22px;
+        color: #ff004f;
+    }
+    .seventh-section .text .email p{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .phone{
+        display: flex;
+        margin-top: 5px;
+    }
+    .seventh-section .text .phone i{
+        font-size: 22px;
+        color: #ff004f;
+    }
+    .seventh-section .text .phone p{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+    .seventh-section .text .logos{
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+    .seventh-section .text .logos i{
+        font-size: 26px;
+        color: gray;
+        cursor: pointer;
+        margin: 0 12px;
+    }
+    .seventh-section .text .logos i:hover{
+        color: #ff004f;
+    }
+    .seventh-section .text button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .seventh-section .text button span{
+        margin-left: 8px;
+    }
+    .seventh-section form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 305px;
+    }
+    .seventh-section form input{
+        width: 780px;
+        background-color: rgb(35, 35, 35);
+        color: #ccc;
+        outline: 0;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 10px;
+        border: 0;
+    }
+    .seventh-section form textarea{
+        width: 780px;
+        background-color: rgb(35, 35, 35);
+        margin-top: 20px;
+        color: #ccc;
+        outline: 0;
+        padding: 10px;
+        border: 0;
+        height: 100px;
+    }
+    .seventh-section form button{
+        background-color: #ff004f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        width: 780px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
