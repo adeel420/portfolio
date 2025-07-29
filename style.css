@@ -19,6 +19,10 @@ body::-webkit-scrollbar-thumb{
 }
 header{
     display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #080808;
+    z-index: 1111111;
     color: white;
 }
 header h1{
